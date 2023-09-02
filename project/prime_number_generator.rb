@@ -6,7 +6,8 @@ end
 
 def generate_primes_in_range(start_range, end_range)
   raise InvalidValueError, "Invalid Input Value" if start_range.nil? || end_range.nil?
-  raise InvalidValueError, "Invalid Input Value" if start_range <= 0 || end_range <= 0
+  raise InvalidValueError, "Invalid Input Value" if !start_range.is_a?(Integer) || !end_range.is_a?(Integer)
+  raise InvalidValueError, "Invalid input. Please enter valid integers greater than 0." if start_range < 0 || end_range < 0
 
   start_range, end_range = end_range, start_range if start_range > end_range
 
@@ -34,16 +35,12 @@ def main
   begin
     print "Enter the start of the range: "
     start_range = Integer(gets.chomp)
-    raise InvalidValueError, "Invalid Input Value" if start_range <= 0
 
     print "Enter the end of the range: "
     end_range = Integer(gets.chomp)
-    raise InvalidValueError, "Invalid Input Value" if end_range <= 0
 
     primes = generate_primes_in_range(start_range, end_range)
     puts "Prime numbers between #{start_range} and #{end_range}: #{primes.join(', ')}"
-  rescue ArgumentError, InvalidValueError
-    puts "Invalid input. Please enter valid integers greater than 0."
   end
 end
 
