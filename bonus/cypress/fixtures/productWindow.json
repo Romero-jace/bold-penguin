@@ -1,0 +1,36 @@
+{
+  "terminal": {
+    "title": "Terminal",
+    "content": "Everything you need to quote and bind.",
+    "href": "/core-pages/terminal"
+  },
+  "terminalEnt": {
+    "title": "Terminal Enterprise Edition",
+    "content": "Keep your business running smoothly",
+    "href": "/core-pages/terminal-enterprise-edition"
+  },
+
+  "exchange": {
+    "title": "Exchange",
+    "content": "Find small business prospects to quote",
+    "href": "/core-pages/exchange"
+  },
+
+  "storefront": {
+    "title": "Storefront",
+    "content": "Build your own shopping experience",
+    "href": "/core-pages/storefront"
+  },
+
+  "clauseLink": {
+    "title": "ClauseLink",
+    "content": "Analyze policy language across forms.",
+    "href": "/core-pages/clauselink"
+  },
+
+  "submissionLink": {
+    "title": "SubmissionLink",
+    "content": "Extract accurate data from submission documents",
+    "href": "/core-pages/submissionlink"
+  }
+}

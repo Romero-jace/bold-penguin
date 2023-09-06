@@ -9,3 +9,13 @@
 
 # rspec failure tracking
 .rspec_status
+
+node_modules
+*.log
+*.aes
+cypress/screenshots
+cypress/videos
+cypress/logs
+.history
+.vscode
+.DS_Store
